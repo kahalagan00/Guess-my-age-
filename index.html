@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Age</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <h1 class="game-title">What is my age?</h1>
+    <h3>Guess my age between 1 and current year. Don't use a calculator!</h3>
+    <h3>It is currently the year <span class="current-year">XXXX</span>.</h3>
+    <h3>I was born in <span class="born-year"></span>.</h3>
+    <h3>
+      Therefore, I should now be <input type="text" class="guess" /> years old.
+      &emsp;
+      <span class="attempts"></span>
+    </h3>
+    <button class="btn check">Submit</button>
+    <br />
+    <br />
+    <button class="btn reset">Reset</button>
+
+    <h1 class="message"></h1>
+    <h1 class="ending"></h1>
+    <script src="./index.js"></script>
+  </body>
+</html>
