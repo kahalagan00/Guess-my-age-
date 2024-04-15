@@ -1,11 +1,15 @@
 "use strict";
 
+const displayHighScore = () => {
+  document.querySelector(".highscore").textContent = `${highScore}`;
+};
+
 const displayCurrentYear = () => {
   document.querySelector(".current-year").textContent = `${currentYear}`;
 };
 
-const displayBirthYear = (message) => {
-  document.querySelector(".born-year").textContent = message;
+const displayBirthYear = () => {
+  document.querySelector(".born-year").textContent = birthYear;
 };
 
 const generateRandomBirthYear = () => {
@@ -27,6 +31,7 @@ const displayEnding = (message) => {
 
 const date = new Date();
 const currentYear = date.getFullYear();
+let highScore = 0;
 let win = false;
 let tries = 10;
 let birthYear = generateRandomBirthYear();
@@ -55,6 +60,10 @@ document.querySelector(".check").addEventListener("click", function () {
   }
 
   if (tries === 0 || win) {
+    if (tries > highScore) {
+      highScore = tries;
+    }
+    displayHighScore();
     displayEnding("Please press the reset button to restart the game");
   }
 
@@ -71,11 +80,12 @@ document.querySelector(".reset").addEventListener("click", function () {
   displayAttempts(`Attempts: ${tries}`);
   displayEnding("");
   displayCurrentYear();
-  displayBirthYear(birthYear);
+  displayBirthYear();
   console.log(`answer: ${currentAge}`);
 });
 
 displayCurrentYear();
-displayBirthYear(birthYear);
+displayBirthYear();
 displayAttempts(`Attempts: ${tries}`);
+displayHighScore();
 console.log(`answer: ${currentAge}`);
