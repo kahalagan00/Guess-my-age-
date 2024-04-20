@@ -1,4 +1,19 @@
 "use strict";
+import figures from "./figures.js";
+
+const displayMainImage = () => {
+  const folderIndex = Math.trunc(Math.random() * 3);
+  let century;
+  let centuryGroup;
+  if (birthYear >= 0 && birthYear <= 100) {
+    century = 1;
+    centuryGroup = figures.peopleInCentury1;
+  } else {
+    century = 2;
+    centuryGroup = figures.peopleInCentury2;
+  }
+  mainImage.src = `./century${century}/${centuryGroup[folderIndex].name}/pfp.jpg`;
+};
 
 const displayHighScore = () => {
   document.querySelector(".highscore").textContent = `${highScore}`;
@@ -31,6 +46,7 @@ const displayEnding = (message) => {
 
 const date = new Date();
 const currentYear = date.getFullYear();
+const mainImage = document.querySelector(".figure-photo");
 let highScore = 0;
 let win = false;
 let tries = 10;
@@ -81,6 +97,7 @@ document.querySelector(".reset").addEventListener("click", function () {
   displayEnding("");
   displayCurrentYear();
   displayBirthYear();
+  displayMainImage();
   console.log(`answer: ${currentAge}`);
 });
 
@@ -89,3 +106,4 @@ displayBirthYear();
 displayAttempts(`Attempts: ${tries}`);
 displayHighScore();
 console.log(`answer: ${currentAge}`);
+console.log(figures.peopleInCentury6[1].description);

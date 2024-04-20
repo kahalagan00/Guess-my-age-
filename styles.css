@@ -1,5 +1,5 @@
 body {
-  background-color: beige;
+  background-color: white;
 }
 
 .guess {
@@ -23,7 +23,7 @@ body {
   font-size: x-large;
 }
 
-.kid-photo {
-  width: 50%;
-  /* height: 200px; */
+.figure-photo {
+  /* max-width: 1000px; */
+  max-height: 500px;
 }

@@ -13,32 +13,69 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <section id="mainHeader" class="px-5 pt-2">
-      <h1 class="display-1">What is my age?</h1>
-      <img src="./kid1hello.jpg" alt="Kid 1 saying hello" class="kid-photo" />
+    <section id="mainHeader">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h1 class="display-1 py-5">What is my age?</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <img
+              src="./kid1hello.jpg"
+              alt="Kid 1 saying hello"
+              class="figure-photo img-fluid"
+            />
+          </div>
+        </div>
+      </div>
     </section>
     <section id="mainGame" class="px-5 py-5">
-      <h3>High score: <span class="highscore"></span></h3>
-      <h3>Guess my age between 1 and current year. Don't use a calculator!</h3>
-      <h3>It is currently the year <span class="current-year">XXXX</span>.</h3>
-      <h3>I was born in <span class="born-year"></span>.</h3>
-      <h3>
-        Therefore, I should now be
-        <input type="text" class="guess form-control-lg" />
-        years old. &emsp;
-        <span class="attempts"></span>
-      </h3>
-      <button type="button" class="btn btn-lg btn-primary check">Submit</button>
-      <br />
-      <br />
-      <button type="button" class="btn btn-lg btn-secondary reset">
-        Reset
-      </button>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h3>
+              <strong>High score: <span class="highscore"></span></strong>
+            </h3>
+            <h3>
+              It is currently the year <span class="current-year">XXXX</span>.
+            </h3>
+            <h3>I was born in <span class="born-year"></span>.</h3>
+            <h3>
+              Therefore, I should now be
+              <input type="text" class="guess form-control-lg" />
+              years old.
+            </h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h3 class="attempts"></h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 py-2 text-center">
+            <button type="button" class="btn btn-lg btn-primary check">
+              Submit
+            </button>
+          </div>
+          <div class="col-lg-12 py-2 text-center">
+            <button type="button" class="btn btn-lg btn-secondary reset">
+              Reset
+            </button>
+          </div>
+        </div>
 
-      <h1 class="message"></h1>
-      <h1 class="ending"></h1>
+        <div class="row">
+          <div class="col-lg-12 py-2 text-center">
+            <h1 class="message"></h1>
+            <h1 class="ending"></h1>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <script src="./index.js"></script>
+    <script type="module" src="./index.js"></script>
   </body>
 </html>
