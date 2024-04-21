@@ -5,13 +5,18 @@ const displayMainImage = () => {
   const folderIndex = Math.trunc(Math.random() * 3);
   let century;
   let centuryGroup;
-  if (birthYear >= 0 && birthYear <= 100) {
-    century = 1;
-    centuryGroup = figures.peopleInCentury1;
-  } else {
-    century = 2;
-    centuryGroup = figures.peopleInCentury2;
-  }
+  // if (birthYear >= 0 && birthYear <= 100) {
+  //   century = 1;
+  //   centuryGroup = figures.peopleInCentury1;
+  // } else {
+  //   century = 2;
+  //   centuryGroup = figures.peopleInCentury2;
+  // }
+
+  //debug
+  century = 11;
+  centuryGroup = figures.peopleInCentury11;
+
   mainImage.src = `./century${century}/${centuryGroup[folderIndex].name}/pfp.jpg`;
 };
 
@@ -106,4 +111,4 @@ displayBirthYear();
 displayAttempts(`Attempts: ${tries}`);
 displayHighScore();
 console.log(`answer: ${currentAge}`);
-console.log(figures.peopleInCentury6[1].description);
+console.log(figures.peopleInCentury7[1].description);

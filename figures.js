@@ -1,3 +1,7 @@
+/*
+    Last updated data: April 21, 2024
+*/
+
 // 0 - 100 Historical Figures
 const peopleInCentury1 = [
   {
@@ -20,6 +24,7 @@ const peopleInCentury1 = [
   },
 ];
 
+// 101 - 200 Historical Figures
 const peopleInCentury2 = [
   {
     name: "Marcus Aurelius",
@@ -38,6 +43,7 @@ const peopleInCentury2 = [
   },
 ];
 
+// 201 - 300 Historical Figures
 const peopleInCentury3 = [
   {
     name: "Constantine I the Great",
@@ -56,6 +62,7 @@ const peopleInCentury3 = [
   },
 ];
 
+// 301 - 400 Historical Figures
 const peopleInCentury4 = [
   {
     name: "Augustine of Hippo",
@@ -74,6 +81,7 @@ const peopleInCentury4 = [
   },
 ];
 
+// 401 - 500 Historical Figures
 const peopleInCentury5 = [
   {
     name: "Benedict of Nursia",
@@ -92,6 +100,7 @@ const peopleInCentury5 = [
   },
 ];
 
+// 501 - 600 Historical Figures
 const peopleInCentury6 = [
   {
     name: "Pope Gregory I",
@@ -110,8 +119,118 @@ const peopleInCentury6 = [
   },
 ];
 
+// 601 - 700 Historical Figures
+const peopleInCentury7 = [
+  {
+    name: "Begga of Landen",
+    description:
+      "Begga of Landen, also known as Saint Begga, was a Frankish noblewoman and Christian saint who lived during the 7th century. Born into the noble family of Pepin of Landen around 615 AD, Begga was renowned for her piety, charity, and devotion to the Christian faith. She was married to Ansegisel, a nobleman and mayor of the palace in the Frankish kingdom, and together they had several children, including Pepin of Herstal, who would become a powerful ruler in the Frankish realm. After the death of her husband, Begga devoted herself to works of charity and founded several monasteries, including the Abbey of Andenne, where she served as abbess. Begga is revered as a saint in the Catholic Church for her exemplary Christian life and her contributions to the spread of Christianity in the Frankish territories. She is celebrated for her compassion towards the poor and needy, as well as her dedication to the religious life. Begga's legacy as a saint and noblewoman continues to inspire Christians to this day, and she is honored as a patron saint of several towns and regions in Belgium.",
+  },
+  {
+    name: "Charles Martel",
+    description:
+      "He was a Frankish statesman and military leader who lived during the 8th century. Born around 688 AD, Charles Martel rose to prominence as the Mayor of the Palace of the Frankish kingdom, effectively serving as the de facto ruler. He is best known for his victory over the invading Muslim forces at the Battle of Tours in 732 AD, which halted the Muslim advance into Western Europe and preserved Christianity in the region. Charles Martel's military successes solidified his power and established the Carolingian dynasty, which would later produce notable rulers such as Charlemagne. He is celebrated as a hero in European history for his defense of Christendom and his role in shaping the course of medieval Europe. Charles Martel's legacy as a strong and capable leader continues to be remembered and honored to this day.",
+  },
+  {
+    name: "Childeric III",
+    description:
+      "Childeric III was the last Merovingian king of the Franks, reigning from 743 to 751 AD. He ascended to the throne following the death of his father, Theuderic IV, and his reign marked the final years of Merovingian rule in Frankish territories. Childeric III's reign was characterized by political instability and the decline of Merovingian power. He was a weak ruler who wielded little real authority, as power had largely shifted to the mayors of the palace, particularly Pepin the Short, who effectively governed the kingdom. Childeric III's reign came to an end in 751 AD when Pepin the Short, with the support of the papacy, deposed him and declared himself king, inaugurating the Carolingian dynasty. Childeric III was forced into a monastery, where he spent the remainder of his life in obscurity. His reign marked the end of the Merovingian dynasty and the beginning of Carolingian rule in the Frankish kingdom, a pivotal moment in the history of medieval Europe.",
+  },
+];
+
+// 701 - 800 Historical Figures
+const peopleInCentury8 = [
+  {
+    name: "Charlemagne",
+    description:
+      "Charlemagne, also known as Charles the Great, was King of the Franks from 768 and Emperor of the Romans from 800 until his death in 814, significantly shaping the course of European history. He united much of Western Europe during his reign and is often credited with founding the Carolingian Empire. Under his rule, there was a cultural and intellectual revival known as the Carolingian Renaissance. Charlemagne's administration innovated with a strong, organized government and he promoted the Christianization of his empire. His crowning as Emperor by Pope Leo III marked a pivotal moment, symbolizing the union of church and state and laying the groundwork for future European monarchies, including the Holy Roman Empire. His legacy includes the impact of his reform policies on education, administration, and culture throughout Europe.",
+  },
+  {
+    name: "Pepin III the Short",
+    description:
+      "Pepin III, known as Pepin the Short, was a Frankish king who reigned from 751 to 768 and is notable for being the first of the Carolingian dynasty to become king. The son of Charles Martel, Pepin rose to power by first serving as Mayor of the Palace, a position that held actual power over the Frankish kingdom while the Merovingian kings were reduced to figureheads. In 751, with the support of the Frankish nobility and the approval of Pope Zachary, Pepin deposed the last Merovingian king, Childeric III, and was subsequently anointed as king by the bishops of the realm, setting a precedent for the divine right of kings in Western Europe. His reign was marked by significant reforms in church and state relations and expansions of the kingdom's boundaries, including the conquest of Lombardy and the donation of land to the Pope, which laid the foundation for the Papal States. Pepin’s successful reign and policies bolstered the power and prestige of the Carolingian dynasty, setting the stage for the future accomplishments of his son, Charlemagne.",
+  },
+  {
+    name: "Lothair I",
+    description:
+      "Lothair I was the eldest son of Charlemagne who became Holy Roman Emperor and King of Italy upon his father's death in 814. His reign, which lasted from 814 until his death in 855, was marked by struggles over the control of the Carolingian Empire with his brothers, Louis the German and Charles the Bald, which culminated in the Treaty of Verdun in 843. This treaty divided the Empire among the three brothers, effectively fragmenting Charlemagne’s territories and shaping the political landscape of medieval Europe. Lothair retained the title of Emperor and control over the middle portion of the Empire, which stretched from the North Sea to Italy, including the regions that would become modern-day Belgium, the Netherlands, Luxembourg, Lorraine, Alsace, Burgundy, Provence, and parts of northern Italy. Lothair's reign was challenged by continuous warfare, both with external enemies and internal conflicts with his brothers, reflecting the difficulty of maintaining unity in the vast empire Charlemagne had built.",
+  },
+];
+
+// 801 - 900 Historical Figures
+const peopleInCentury9 = [
+  {
+    name: "Idris II",
+    description:
+      "Idris II was the founder of the city of Fez and a major figure in the establishment of the Idrisid dynasty in Morocco, ruling from 803 to 828. Born in Volubilis shortly after his father, Idris I, the founder of the Idrisid dynasty, had been assassinated, Idris II was proclaimed imam by the Berbers of the region at the age of 11. Under his leadership, Idris II significantly expanded the territory under Idrisid control, consolidating power and securing his kingdom against external threats, particularly from the Abbasids. His rule is noted for the strengthening of Islam in Morocco, bolstering the country’s urban centers, and promoting economic and cultural exchanges across the region. Idris II’s founding of Fez in 808 helped it become one of the leading cultural and religious centers in the Islamic world. His effective governance laid the groundwork for the continued prominence of the Idrisid dynasty in Moroccan history.",
+  },
+  {
+    name: "Emperor Jingzong of Tang",
+    description:
+      "Emperor Jingzong of Tang, born Li Zhan, was an emperor of the Tang dynasty in China, reigning from 824 to 827. Ascending the throne at the age of 15 following the death of his father, Emperor Muzong, Jingzong's reign was short-lived and marked by relative inactivity and a lack of substantial governance. His tenure as emperor saw the continuation of the power struggles and decline that had begun to afflict the Tang dynasty in its later years. The young emperor was more interested in leisure and entertainment than in state affairs, heavily relying on eunuchs and court officials who furthered their own interests. His neglect of imperial duties led to increased power struggles within the court and the weakening of central authority. Emperor Jingzong’s reign came to an abrupt end when he was assassinated by his own guards in 827, a mere three years after taking the throne, underscoring the instability and factionalism that characterized the late Tang dynasty.",
+  },
+  {
+    name: "Emperor Junna",
+    description:
+      "Emperor Junna, reigning from 823 to 833 during Japan's Heian period, succeeded his brother Emperor Saga and presided over a period of relative peace and cultural growth. His reign continued the Heian-period reforms aimed at consolidating imperial authority, and he played a crucial role in maintaining stability within the court. Junna's decision to abdicate in favor of his nephew, Emperor Nimmyo, exemplified the tradition of peaceful succession, ensuring the continuity of governance. Despite his relatively short reign, Emperor Junna's contributions to the stability and cultural development of the Heian court left a lasting impact on Japanese history.",
+  },
+];
+
+// 901 - 1000 Historical Figures
+const peopleInCentury10 = [
+  {
+    name: "Canute the Great",
+    description:
+      "Canute the Great, also known as Cnut, was a Danish king who became the ruler of a vast North Sea empire, including Denmark, England, Norway, and parts of Sweden, during the 11th century. Ascending to the throne of Denmark in 1018, Canute expanded his domain through military conquests and strategic alliances. In 1016, he also claimed the throne of England after the death of Edmund II, solidifying his position as one of the most powerful monarchs of his time. Canute's reign is remembered for his effective governance, religious tolerance, and efforts to unite his diverse realms. He enacted reforms to improve administration, fostered economic growth, and maintained peace within his territories. Despite his reputation as a ruthless warrior, Canute is perhaps best known for the legendary story of him commanding the tides to halt, demonstrating the limits of human power in the face of nature. His death in 1035 marked the end of an era of Scandinavian dominance in Northern Europe, but his legacy as a skilled statesman and ruler endured for centuries.",
+  },
+  {
+    name: "Shayban ibn Ahmad ibn Tulun",
+    description:
+      "Shayban ibn Ahmad ibn Tulun was a prominent figure in the Tulunid dynasty, which ruled Egypt and parts of Syria from 868 to 905. He was the son of Ahmad ibn Tulun, the founder of the dynasty, and succeeded his father as ruler of the Tulunid domains. Shayban's reign was marked by both internal consolidation and external conflicts with neighboring powers, including the Abbasid Caliphate and the Byzantine Empire. He continued his father's policies of promoting agriculture, commerce, and cultural development, overseeing a period of relative stability and prosperity in Egypt. However, his reign was also marked by challenges, including revolts by provincial governors and struggles for power within the ruling family. Despite these challenges, Shayban's leadership helped maintain the Tulunid dynasty's influence in the region until its eventual decline and absorption into the Abbasid Caliphate.",
+  },
+  {
+    name: "Dae Inseon",
+    description:
+      "Dae Inseon, also known as Dae In-seon, was indeed the last king of Balhae, ruling from 927 to 936. During his reign, Balhae faced increasing pressure from the rising Khitan Empire, which ultimately led to its downfall. Dae Inseon attempted to resist Khitan incursions, but in 926, the Khitans launched a massive invasion that culminated in the fall of the Balhae capital of Dongmo Mountain (present-day Ji'an in Jilin, China) in 926. Dae Inseon and his court fled to the northeast, but Balhae's territory was gradually overrun, leading to the collapse of the kingdom. Dae Inseon's fate after the fall of Balhae is uncertain, as historical records vary. Some accounts suggest that he fled to Goryeo (present-day Korea) or sought refuge with other regional powers, while others claim that he was captured or killed by the Khitans. Regardless, Dae Inseon's reign marked the end of Balhae's existence as an independent kingdom, and its territory was absorbed into the Khitan Empire.",
+  },
+];
+
+// 1001 - 1100 Historical Figures
+const peopleInCentury11 = [
+  {
+    name: "Bohemond I",
+    description:
+      "Bohemond I, also known as Bohemond of Taranto, was a Norman nobleman who played a prominent role in the First Crusade and the subsequent establishment of the Principality of Antioch. Born around 1058, Bohemond was the son of Robert Guiscard, Duke of Apulia and Calabria, and became known for his military prowess and ambitions for territorial expansion in the Eastern Mediterranean. In 1097, Bohemond led a Norman contingent to join the First Crusade, where he distinguished himself in battles and sieges, including the capture of Antioch in 1098. Following the Crusade's success, Bohemond asserted himself as the ruler of Antioch, founding the Principality of Antioch and consolidating his power in the region. His principality became a significant Crusader state and played a crucial role in subsequent Crusades. Bohemond's legacy as a Crusader leader and founder of Antioch remains influential in medieval history, shaping the geopolitics of the Eastern Mediterranean during the Crusades.",
+  },
+  {
+    name: "Henry I Beauclerc",
+    description:
+      "Henry I Beauclerc, also known as Henry I of England, was a medieval English king who ruled from 1100 to 1135. Born in 1068, he was the fourth son of William the Conqueror and Matilda of Flanders. Henry's reign followed a period of turmoil after the death of his brother, William II, and he ascended to the throne following a disputed succession with his elder brother, Robert Curthose. Henry's reign was marked by efforts to consolidate royal authority and strengthen the English monarchy. He implemented administrative and legal reforms, including the issuing of the Charter of Liberties, which limited the power of feudal lords and established the rights of the king's subjects. Henry also oversaw the expansion of royal justice and the development of a centralized government bureaucracy. His reign was not without challenges, including conflicts with his barons and his own family members, particularly his nephews, who contested his rule. Henry I's reign laid the foundation for the Angevin Empire and the subsequent Plantagenet dynasty, shaping the course of medieval English history.",
+  },
+  {
+    name: "Conrad III",
+    description:
+      "Conrad III, a member of the Hohenstaufen dynasty, was King of Germany from 1138 until his death in 1152 and Holy Roman Emperor from 1152. Born around 1093, Conrad was the son of Frederick I, Duke of Swabia, and Agnes of Germany. He played a significant role in the political and military affairs of the Holy Roman Empire during the turbulent period of the 12th century. Conrad faced challenges to his rule from rival claimants to the throne, including the Welf and Hohenstaufen factions, leading to civil strife and armed conflict. He also contended with external threats, such as the expansion of the Kingdom of Hungary and conflicts with the Byzantine Empire. Despite these challenges, Conrad sought to assert imperial authority and maintain stability within the empire. He participated in the Second Crusade alongside King Louis VII of France, although the campaign ultimately ended in failure. Conrad's reign marked a transitional period in the history of the Holy Roman Empire, as it grappled with the changing political dynamics of medieval Europe. His efforts to consolidate royal power and navigate complex diplomatic relationships laid the groundwork for future Hohenstaufen rulers, including his nephew Frederick Barbarossa.",
+  },
+];
+
+// 1101 - 1200 Historical Figures
+const peopleInCentury12 = [
+  {
+    name: "name",
+    description: "description",
+  },
+  {
+    name: "name",
+    description: "description",
+  },
+  {
+    name: "name",
+    description: "description",
+  },
+];
+
 export default {
-  peopleInCentury0,
   peopleInCentury1,
   peopleInCentury2,
   peopleInCentury3,
@@ -124,13 +243,13 @@ export default {
   peopleInCentury10,
   peopleInCentury11,
   peopleInCentury12,
-  peopleInCentury13,
-  peopleInCentury14,
-  peopleInCentury15,
-  peopleInCentury16,
-  peopleInCentury17,
-  peopleInCentury18,
-  peopleInCentury19,
-  peopleInCentury20,
-  peopleInCentury21,
+  //   peopleInCentury13,
+  //   peopleInCentury14,
+  //   peopleInCentury15,
+  //   peopleInCentury16,
+  //   peopleInCentury17,
+  //   peopleInCentury18,
+  //   peopleInCentury19,
+  //   peopleInCentury20,
+  //   peopleInCentury21,
 };

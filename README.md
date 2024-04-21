@@ -1,7 +1,7 @@
 # What is my age?
 
-### A web-based video game.
+### A web-based guessing video game.
 
 <section id="rules">
-  This is a web-based game where the user has to guess the person's age. They have a limited number of attempts to guess the age correctly. They have to reset the game if they lose or win. They can also reset the game whenever they want. The age and birth year of the person changes every time the game resets.
+  In this web-based game, players are tasked with accurately guessing the age of a depicted individual within a specified number of attempts. Following each win or loss, players must reset the game. Additionally, they retain the option to reset the game at their discretion. Notably, with each game reset, the age and birth year of the depicted individual undergo dynamic changes. Upon successfully guessing the age, players are rewarded with a descriptive paragraph either about the current individual in the picture or a person associated with it.
 <br>
