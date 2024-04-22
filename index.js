@@ -14,8 +14,8 @@ const displayMainImage = () => {
   // }
 
   //debug
-  century = 11;
-  centuryGroup = figures.peopleInCentury11;
+  century = 21;
+  centuryGroup = figures.peopleInCentury21;
 
   mainImage.src = `./century${century}/${centuryGroup[folderIndex].name}/pfp.jpg`;
 };
