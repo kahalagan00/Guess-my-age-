@@ -1,23 +1,109 @@
 "use strict";
 import figures from "./figures.js";
 
+/*
+  Author: Joshmar Morales
+  Last updated: April 23, 2024
+*/
+
 const displayMainImage = () => {
-  const folderIndex = Math.trunc(Math.random() * 3);
+  const personIndex = Math.trunc(Math.random() * 3);
   let century;
   let centuryGroup;
-  // if (birthYear >= 0 && birthYear <= 100) {
-  //   century = 1;
-  //   centuryGroup = figures.peopleInCentury1;
-  // } else {
-  //   century = 2;
-  //   centuryGroup = figures.peopleInCentury2;
-  // }
 
-  //debug
-  century = 21;
-  centuryGroup = figures.peopleInCentury21;
+  century = Math.trunc(Math.random() * 21) + 1;
 
-  mainImage.src = `./century${century}/${centuryGroup[folderIndex].name}/pfp.jpg`;
+  switch (century) {
+    case 1:
+      centuryGroup = figures.peopleInCentury1;
+      break;
+
+    case 2:
+      centuryGroup = figures.peopleInCentury2;
+      break;
+
+    case 3:
+      centuryGroup = figures.peopleInCentury3;
+      break;
+
+    case 4:
+      centuryGroup = figures.peopleInCentury4;
+      break;
+
+    case 5:
+      centuryGroup = figures.peopleInCentury5;
+      break;
+
+    case 6:
+      centuryGroup = figures.peopleInCentury6;
+      break;
+
+    case 7:
+      centuryGroup = figures.peopleInCentury7;
+      break;
+
+    case 8:
+      centuryGroup = figures.peopleInCentury8;
+      break;
+
+    case 9:
+      centuryGroup = figures.peopleInCentury9;
+      break;
+
+    case 10:
+      centuryGroup = figures.peopleInCentury10;
+      break;
+
+    case 11:
+      centuryGroup = figures.peopleInCentury11;
+      break;
+
+    case 12:
+      centuryGroup = figures.peopleInCentury12;
+      break;
+
+    case 13:
+      centuryGroup = figures.peopleInCentury13;
+      break;
+
+    case 14:
+      centuryGroup = figures.peopleInCentury14;
+      break;
+
+    case 15:
+      centuryGroup = figures.peopleInCentury15;
+      break;
+
+    case 16:
+      centuryGroup = figures.peopleInCentury16;
+      break;
+
+    case 17:
+      centuryGroup = figures.peopleInCentury17;
+      break;
+
+    case 18:
+      centuryGroup = figures.peopleInCentury18;
+      break;
+
+    case 19:
+      centuryGroup = figures.peopleInCentury19;
+      break;
+
+    case 20:
+      centuryGroup = figures.peopleInCentury20;
+      break;
+
+    case 21:
+      centuryGroup = figures.peopleInCentury21;
+      break;
+
+    default:
+      centuryGroup = figures.peopleInCentury1;
+      break;
+  }
+
+  mainImage.src = `./century${century}/${centuryGroup[personIndex].name}/pfp.jpg`;
 };
 
 const displayHighScore = () => {
@@ -49,6 +135,10 @@ const displayEnding = (message) => {
   document.querySelector(".ending").textContent = message;
 };
 
+const displayInputBox = (color) => {
+  document.querySelector(".guess").style.backgroundColor = color;
+};
+
 const date = new Date();
 const currentYear = date.getFullYear();
 const mainImage = document.querySelector(".figure-photo");
@@ -66,6 +156,7 @@ document.querySelector(".check").addEventListener("click", function () {
       displayStatus("Enter a non-zero positive number please.");
     } else if (guess === currentAge) {
       displayStatus("EXCELLENT!!! You got it right 🥳");
+      displayInputBox("#2dff54");
       win = true;
     } else if (guess < currentAge) {
       displayStatus("I am older than that! ⬆️");
@@ -78,6 +169,7 @@ document.querySelector(".check").addEventListener("click", function () {
 
   if (tries === 0) {
     displayStatus("You ran out of attempts...");
+    displayInputBox("red");
   }
 
   if (tries === 0 || win) {
@@ -103,9 +195,11 @@ document.querySelector(".reset").addEventListener("click", function () {
   displayCurrentYear();
   displayBirthYear();
   displayMainImage();
+  displayInputBox("white");
   console.log(`answer: ${currentAge}`);
 });
 
+displayMainImage();
 displayCurrentYear();
 displayBirthYear();
 displayAttempts(`Attempts: ${tries}`);
