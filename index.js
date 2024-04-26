@@ -3,7 +3,7 @@ import figures from "./figures.js";
 
 /*
   Author: Joshmar Morales
-  Last updated: April 23, 2024
+  Last updated: April 26, 2024
 */
 
 const displayMainImage = () => {
@@ -11,6 +11,8 @@ const displayMainImage = () => {
   let century;
   let centuryGroup;
 
+  // JOSHMAR DEBUG AND CHANGE
+  // The century needs to match with the calculated age
   century = Math.trunc(Math.random() * 21) + 1;
 
   switch (century) {
@@ -204,5 +206,4 @@ displayCurrentYear();
 displayBirthYear();
 displayAttempts(`Attempts: ${tries}`);
 displayHighScore();
-console.log(`answer: ${currentAge}`);
-console.log(figures.peopleInCentury7[1].description);
+// console.log(`answer: ${currentAge}`);  // Uncomment to debug and see answers in console :)

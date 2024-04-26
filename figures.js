@@ -1,5 +1,5 @@
 /*
-    Last updated data: April 21, 2024
+    Last updated data: April 22, 2024
 */
 
 // 0 - 100 Historical Figures
@@ -217,16 +217,190 @@ const peopleInCentury11 = [
 // 1101 - 1200 Historical Figures
 const peopleInCentury12 = [
   {
-    name: "name",
-    description: "description",
+    name: "Richard le Breton",
+    description:
+      "He was a Norman nobleman who, in 1170, was one of the four knights who murdered Thomas Becket, the Archbishop of Canterbury, in Canterbury Cathedral. This act was a result of tensions between Becket and King Henry II over the rights and privileges of the Church versus those of the crown. Le Bretun's involvement in Becket's assassination has left a lasting mark on history, as Becket was later venerated as a saint by the Catholic Church, and his murder became one of the most infamous events of the medieval period.",
   },
   {
-    name: "name",
-    description: "description",
+    name: "Al-Nasir",
+    description:
+      "Al-Nasir was the Abbasid Caliph who reigned from 1180 to 1225. He is remembered for his long and relatively stable rule during a period of significant political and social change in the Islamic world. Al-Nasir maintained the Abbasid Caliphate's authority over Baghdad and its surrounding regions, while also navigating complex relationships with neighboring powers such as the Ayyubid Sultanate and the Khwarazmian Empire. His reign saw advancements in various fields, including literature, science, and architecture, contributing to the flourishing of Islamic civilization during the High Middle Ages. However, it was also marked by conflicts and power struggles within the caliphate and with external forces, reflecting the broader geopolitical dynamics of the time.",
   },
   {
-    name: "name",
-    description: "description",
+    name: "Aanandadeva",
+    description:
+      "Aanandadeva, also known as Anandadeva, was a king of the Thakuri dynasty who ruled in Nepal around 1147. His reign marked a significant period in the history of Nepal, characterized by political stability and cultural development. Aanandadeva is remembered for his efforts to expand and consolidate the Thakuri kingdom's territory, as well as for his patronage of arts and literature. Under his rule, Nepal experienced growth and prosperity, with notable advancements in architecture, religion, and governance. Aanandadeva's legacy as a ruler contributed to the shaping of Nepal's history and cultural identity during the medieval period.",
+  },
+];
+
+// 1201 - 1300 Historical Figures
+const peopleInCentury13 = [
+  {
+    name: "Gijsbrecht IV of Amstel",
+    description:
+      "Gijsbrecht IV of Amstel was a medieval nobleman who played a significant role in the politics of the Low Countries in the 13th century. In 1235, Gijsbrecht IV was a key figure in the ongoing power struggles between various feudal lords and the emerging urban centers, particularly in the region around Amsterdam. He served as the Lord of Amstel, a strategically important territory, and was involved in conflicts with neighboring lords and cities over land, trade routes, and political influence. Gijsbrecht IV's actions during this time helped shape the political landscape of the Low Countries and laid the groundwork for the eventual rise of Amsterdam as a major economic and cultural hub in the region.",
+  },
+  {
+    name: "Carino of Balsamo",
+    description:
+      "Carino of Balsamo, also known as Carino Balsamo, was a notorious Italian criminal who gained infamy for his involvement in a high-profile murder in 1252. He was implicated in the assassination of Alberto di Giordano, a prominent nobleman, in the city of Balsamo. Carino's motive for the murder remains unclear, but it is believed to have been driven by personal vendettas or political rivalries prevalent in the tumultuous socio-political climate of medieval Italy. The murder of Alberto di Giordano sparked outrage and led to a significant crackdown on crime in the region, with authorities intensifying efforts to apprehend Carino and his associates. This event cemented Carino's reputation as a ruthless criminal and became a cautionary tale in Italian folklore.",
+  },
+  {
+    name: "Yusuf II",
+    description:
+      "Yusuf II, also known as Abu Yusuf Yaqub al-Mansur, was an Almohad caliph who ruled from 1213 to 1224. He succeeded his father, Muhammad al-Nasir, and continued the expansionist policies of the Almohad dynasty in North Africa and al-Andalus (Islamic Spain). During his reign, Yusuf II faced internal rebellions and external pressures from Christian kingdoms in the Iberian Peninsula, particularly during the Reconquista. He also contended with challenges from rival Muslim powers, such as the Marinids in Morocco. Yusuf II's reign was marked by both military successes and setbacks, and he is remembered as a significant figure in the history of the Almohad Caliphate, which reached its zenith under his rule before beginning to decline in the following decades.",
+  },
+];
+
+// 1301 - 1400 Historical Figures
+const peopleInCentury14 = [
+  {
+    name: "Dante Alighieri",
+    description:
+      'Dante Alighieri, the celebrated Italian poet, was born in Florence in 1265 and is best known for his epic poem "The Divine Comedy," completed around 1320, shortly before his death. This monumental work, consisting of three parts—Inferno, Purgatorio, and Paradiso—chronicles Dante\'s journey through Hell, Purgatory, and Heaven, guided by the Roman poet Virgil and his beloved Beatrice. "The Divine Comedy" is renowned for its profound theological insights, rich symbolism, and vivid depiction of the afterlife. Dante\'s masterpiece not only influenced the development of Italian literature but also had a profound impact on Western culture, shaping ideas about morality, justice, and the human condition for centuries to come.',
+  },
+  {
+    name: "Uthong",
+    description:
+      "Uthong, also known as King Ramathibodi I, was a pivotal figure in the establishment of the Kingdom of Ayutthaya in 1351. He was the founder and first king of the Ayutthaya Kingdom, which would become one of the most powerful states in Southeast Asia. Uthong united various Thai principalities under his rule and established Ayutthaya as the capital, strategically located at the confluence of several rivers. During his reign, Uthong implemented administrative reforms, fostered trade and diplomatic relations, and promoted Theravada Buddhism as the state religion. His leadership laid the foundation for Ayutthaya's prosperity and cultural flourishing, shaping the course of Thai history for centuries to come.",
+  },
+  {
+    name: "Fa Ngum",
+    description:
+      "Fa Ngum, also known as Samdach Brhat-Anya Fa Ladhuraniya Sri Sadhana Kanayudha Maharaja Brhat Rajadharana Sri Chudhana Negara (quite a mouthful!), was the founder and first king of the Kingdom of Lan Xang, which means \"Land of a Million Elephants.\" In 1353, Fa Ngum led the establishment of Lan Xang, marking the beginning of his reign. He was of Khmer descent and had been exiled from his homeland due to political turmoil. With the support of his father-in-law, the ruler of the principality of Xiang Dong Xiang Thong, Fa Ngum gathered an army and began his conquests. He successfully unified various Tai-speaking peoples of the region under his rule, forming the kingdom of Lan Xang. Fa Ngum's reign was characterized by territorial expansion, political consolidation, and the promotion of Theravada Buddhism. Lan Xang became a major power in mainland Southeast Asia, playing a significant role in the region's history for centuries.",
+  },
+];
+
+// 1401 - 1500  Historical Figures
+const peopleInCentury15 = [
+  {
+    name: "Johannes Gutenberg",
+    description:
+      "Johannes Gutenberg, a German inventor and printer, is renowned for his development of the movable-type printing press around 1440. His invention revolutionized the production of books and contributed immensely to the spread of knowledge and the onset of the Renaissance. Gutenberg's innovation enabled the mass production of books, making them more affordable and accessible to a wider audience. His most famous work, the Gutenberg Bible, printed around 1455, is considered one of the most important books in the history of printing. Gutenberg's printing press laid the foundation for modern printing technology and played a pivotal role in the dissemination of ideas during the Renaissance and beyond, profoundly influencing the course of human history.",
+  },
+  {
+    name: "Christopher Columbus",
+    description:
+      'Christopher Columbus, an Italian explorer, embarked on his historic voyage across the Atlantic Ocean in 1492, funded by the Spanish monarchs Ferdinand II of Aragon and Isabella I of Castile. Sailing westward in search of a new route to Asia, Columbus instead reached the islands of the Caribbean, landing in what is now the Bahamas. His voyages, which continued until 1504, initiated the European exploration and colonization of the Americas, leading to profound consequences for both the Old and New Worlds. While Columbus is often credited with "discovering" America, his expeditions had complex and controversial impacts, including the exploitation and enslavement of indigenous peoples, as well as the exchange of goods, ideas, and diseases between continents. Despite ongoing debate about his legacy, Columbus\'s voyages marked a significant turning point in world history, shaping global trade, culture, and geopolitical dynamics for centuries to come.',
+  },
+  {
+    name: "Joan of Arc",
+    description:
+      "Joan of Arc, also known as Jeanne d'Arc, was a French peasant girl who rose to prominence during the Hundred Years' War between France and England in the 15th century. Born in Domrémy in 1412, Joan claimed to have received visions from saints instructing her to support Charles VII and help him claim the French throne. At the age of 17, she convinced Charles to allow her to lead French troops in battle. Joan's military leadership played a crucial role in several French victories, including the lifting of the siege of Orléans in 1429, which boosted French morale and paved the way for Charles VII's coronation. However, Joan was eventually captured by the Burgundians, allies of the English, and handed over to the English for trial. In 1431, she was convicted of heresy and burned at the stake in Rouen. Joan of Arc's legacy as a symbol of French unity, patriotism, and religious fervor has endured through the centuries, and she was canonized as a saint by the Catholic Church in 1920.",
+  },
+];
+
+// 1501 - 1600 Historical Figures
+const peopleInCentury16 = [
+  {
+    name: "Martin Luther",
+    description:
+      "Martin Luther, a German monk and theologian, is best known for sparking the Protestant Reformation in the 16th century. Born in 1483, Luther became increasingly disillusioned with the teachings and practices of the Catholic Church, particularly regarding the sale of indulgences and the doctrine of salvation through good works. In 1517, he famously nailed his Ninety-Five Theses to the door of the Castle Church in Wittenberg, criticizing these practices and calling for reform within the Church. Luther's writings and teachings, disseminated widely through the printing press, ignited a religious and social movement across Europe. He emphasized the primacy of faith and the authority of scripture, advocating for a direct relationship between individuals and God. Despite facing excommunication by the Catholic Church and condemnation by political authorities, Luther's ideas gained traction, leading to the formation of new Protestant denominations and forever changing the religious landscape of Europe. Luther's translation of the Bible into German also played a significant role in standardizing the German language. His legacy as a religious reformer, theologian, and translator continues to influence Christianity and Western culture to this day.",
+  },
+  {
+    name: "Nicolaus Copernicus",
+    description:
+      "Nicolaus Copernicus, a Renaissance-era Polish astronomer, is renowned for his groundbreaking heliocentric model of the universe. Born in 1473, Copernicus challenged the prevailing geocentric view, which held that the Earth was at the center of the cosmos, by proposing that the Earth and other planets revolve around the sun. In his seminal work \"De Revolutionibus Orbium Coelestium\" (On the Revolutions of the Celestial Spheres), published in 1543, Copernicus presented his heliocentric theory, which laid the foundation for modern astronomy. Although his ideas were initially met with skepticism and opposition, they eventually gained acceptance and revolutionized humanity's understanding of the cosmos. Copernicus's heliocentric model paved the way for later scientific advancements and profoundly influenced the Scientific Revolution of the 16th and 17th centuries. His work exemplifies the power of observation, reason, and critical thinking in advancing our understanding of the natural world.",
+  },
+  {
+    name: "Michelangelo Buonarroti",
+    description:
+      "Michelangelo Buonarroti, an Italian Renaissance artist, was one of the most influential figures in the history of Western art. Born in 1475, Michelangelo excelled as a sculptor, painter, architect, and poet, leaving an indelible mark on the cultural landscape of his time and beyond. His masterpieces include the marble statue of David, the frescoes of the Sistine Chapel ceiling in the Vatican, and the design of the dome of St. Peter's Basilica in Rome. Michelangelo's art is characterized by its grandeur, emotional intensity, and technical virtuosity, reflecting the humanist ideals of the Renaissance. He was a central figure in the artistic and intellectual circles of his day, and his works continue to inspire awe and admiration for their beauty and complexity. Michelangelo's enduring legacy as a Renaissance genius reaffirms his status as one of the greatest artists in history.",
+  },
+];
+
+// 1601 - 1700 Historical Figures
+const peopleInCentury17 = [
+  {
+    name: "Isaac Newton",
+    description:
+      'Isaac Newton, an English mathematician, physicist, and astronomer, is widely regarded as one of the most influential scientists of all time. Born in 1643, Newton made groundbreaking contributions to various fields of science and mathematics. His most famous work, "Philosophiæ Naturalis Principia Mathematica" (Mathematical Principles of Natural Philosophy), published in 1687, laid the foundation for classical mechanics and formulated the laws of motion and universal gravitation. Newton also made significant advancements in optics, developing theories on the nature of light and color, and constructing the first practical reflecting telescope. His work on calculus, done concurrently with Gottfried Wilhelm Leibniz, also had a profound impact on mathematics and science. Newton\'s revolutionary ideas transformed our understanding of the physical world and laid the groundwork for modern physics. His legacy as a towering figure in the history of science continues to inspire generations of scientists and scholars.',
+  },
+  {
+    name: "Galileo Galilei",
+    description:
+      'Galileo Galilei, an Italian physicist, astronomer, and mathematician, is often referred to as the "father of observational astronomy" and the "father of modern physics." Born in 1564, Galileo made numerous groundbreaking contributions to science during the Renaissance. He improved the telescope, enabling him to make detailed observations of celestial bodies, including the moons of Jupiter, the phases of Venus, and the craters of the moon. Galileo\'s observations provided compelling evidence for the heliocentric model of the solar system proposed by Copernicus, challenging the geocentric view of the universe held by the Catholic Church at the time. His advocacy for heliocentrism and his defense of the Copernican model led to conflict with the Church and the Roman Inquisition. In 1633, Galileo was convicted of heresy and sentenced to house arrest for the remainder of his life. Despite his personal struggles, Galileo\'s work laid the foundation for modern astronomy and physics, profoundly influencing the scientific revolution of the 17th century and shaping our understanding of the cosmos. His commitment to empirical observation and the pursuit of scientific truth remains an enduring legacy in the history of science.',
+  },
+  {
+    name: "William Shakespeare",
+    description:
+      'William Shakespeare, often regarded as the greatest playwright and poet in the English language, was born in 1564 in Stratford-upon-Avon, England. His works, which include approximately 39 plays, 154 sonnets, and two long narrative poems, have had an unparalleled impact on literature, theater, and culture worldwide. Shakespeare\'s plays cover a wide range of genres and themes, from romantic comedies like "A Midsummer Night\'s Dream" and "Twelfth Night" to tragic masterpieces such as "Hamlet," "Othello," and "King Lear." His language, characterized by its richness, complexity, and universal appeal, continues to captivate audiences centuries after his death. Shakespeare\'s profound insights into human nature, his mastery of language and form, and his ability to explore timeless themes of love, power, jealousy, and ambition have cemented his status as a literary giant. His legacy as the Bard of Avon remains unmatched, and his works are celebrated and studied around the globe as enduring classics of world literature.',
+  },
+];
+
+// 1701 - 1800 Historical Figures
+const peopleInCentury18 = [
+  {
+    name: "Wolfgang Amadeus Mozart",
+    description:
+      'Wolfgang Amadeus Mozart, born in 1756 in Salzburg, Austria, was one of the most prodigiously talented composers in history. A child prodigy, Mozart began composing music at a remarkably young age, and his early works demonstrated extraordinary musical precocity. Over the course of his relatively short life, Mozart composed a vast and diverse body of music, including symphonies, operas, concertos, chamber music, and choral works. His compositions, which blend technical mastery with profound emotional depth and artistic innovation, have had a profound and enduring impact on classical music. Some of his most famous works include operas like "The Marriage of Figaro," "Don Giovanni," and "The Magic Flute," as well as symphonies such as "Symphony No. 40" and "Symphony No. 41 (Jupiter)." Despite facing financial difficulties and personal challenges throughout his life, Mozart\'s musical genius continued to flourish, leaving behind a legacy of unparalleled beauty and brilliance. His contributions to the classical music repertoire remain celebrated and cherished by audiences and musicians alike, making him one of the most beloved and influential composers of all time.',
+  },
+  {
+    name: "George Washington",
+    description:
+      "George Washington, born in 1732 in Westmoreland County, Virginia, was a pivotal figure in American history, often referred to as the \"Father of His Country.\" As a military leader, Washington played a crucial role in the American Revolutionary War, commanding the Continental Army to victory against the British forces. His leadership and perseverance were instrumental in securing American independence from British rule. Following the war, Washington became the first President of the United States, serving two terms from 1789 to 1797. As president, he played a key role in shaping the early government of the United States, establishing many precedents that would guide the nation's development. Washington's leadership, integrity, and commitment to republican ideals set the standard for future presidents and earned him enduring admiration as one of America's greatest leaders. His farewell address, in which he warned against the dangers of political factionalism and foreign entanglements, remains a landmark in American political thought. Washington's legacy as a founding father and statesman continues to be celebrated and revered across the United States.",
+  },
+  {
+    name: "James Watt",
+    description:
+      "James Watt, born in 1736 in Greenock, Scotland, was a Scottish inventor, mechanical engineer, and chemist best known for his improvements to the steam engine. Watt's innovations, which included the invention of the separate condenser, greatly enhanced the efficiency and practicality of steam power, revolutionizing industry and transportation during the Industrial Revolution. His improvements to the steam engine played a central role in driving the mechanization of factories, mills, and mines, leading to unprecedented economic growth and technological advancement. Watt's work laid the foundation for the widespread adoption of steam power across various industries, transforming the way goods were produced and accelerating the pace of industrialization. In addition to his contributions to engineering, Watt also made significant advancements in chemistry, mathematics, and instrument-making. His inventive genius and entrepreneurial spirit continue to inspire engineers and innovators to this day, and his name is immortalized in the unit of power, the watt, which honors his enduring legacy in the field of mechanical engineering.",
+  },
+];
+
+// 1801 - 1900 Historical Figures
+const peopleInCentury19 = [
+  {
+    name: "Charles Darwin",
+    description:
+      "Charles Darwin, born in 1809 in Shrewsbury, England, was a British naturalist and biologist best known for his theory of evolution by natural selection. Darwin's groundbreaking work, \"On the Origin of Species,\" published in 1859, revolutionized our understanding of the natural world and our place within it. His theory proposed that species evolve over time through the process of natural selection, whereby organisms with advantageous traits are more likely to survive and reproduce, leading to the gradual adaptation and diversification of species. Darwin's theory challenged prevailing views of the time, including the notion of special creation and the fixity of species, and provided a unifying framework for understanding the diversity of life on Earth. His ideas had profound implications for biology, anthropology, psychology, and many other fields, sparking intense debate and controversy that continues to this day. Darwin's contributions to science not only transformed our understanding of the natural world but also revolutionized the way we think about ourselves and our place in the cosmos. His legacy as one of the most influential figures in the history of science is celebrated worldwide, and his ideas continue to shape our understanding of life and its origins.",
+  },
+  {
+    name: "Napoleon Bonaparte",
+    description:
+      "Napoleon Bonaparte, born in 1769 on the island of Corsica, rose to prominence as a military leader during the French Revolution and went on to become Emperor of the French. His military genius and ambitious vision transformed Europe and shaped the course of world history. Napoleon's military campaigns, characterized by bold strategy and tactical innovation, led to a series of stunning victories that expanded the French Empire across much of continental Europe. However, his aggressive expansionism and quest for power ultimately led to his downfall. Defeated in the Battle of Waterloo in 1815, Napoleon was exiled to the island of Saint Helena, where he spent the remainder of his life until his death in 1821. Despite his controversial legacy, Napoleon's impact on France and the world is undeniable. His legal and administrative reforms, known as the Napoleonic Code, laid the foundation for modern French law and influenced legal systems around the globe. His military conquests and political ambitions reshaped the map of Europe and fueled nationalist movements throughout the 19th century. Napoleon's complex legacy continues to be debated by historians and scholars, but his imprint on the history of Europe and the world remains indelible.",
+  },
+  {
+    name: "Abraham Lincoln",
+    description:
+      "Abraham Lincoln, born in 1809 in a log cabin in Hardin County, Kentucky, rose from humble beginnings to become the 16th President of the United States. Lincoln is best known for his leadership during the American Civil War and his efforts to abolish slavery in the United States. As president, Lincoln faced the daunting challenge of preserving the Union amidst the secession of Southern states and the outbreak of civil war. His steadfast leadership, moral clarity, and commitment to the principles of equality and liberty helped guide the nation through its darkest hour. Lincoln's Emancipation Proclamation in 1863 declared the freedom of all slaves in Confederate-held territory, and he later championed the passage of the 13th Amendment to the U.S. Constitution, which permanently abolished slavery in the United States. Lincoln's eloquent speeches, including the Gettysburg Address, have become iconic expressions of American values and ideals. Tragically, Lincoln's life was cut short when he was assassinated by John Wilkes Booth in 1865, just days after the Confederate surrender at Appomattox Court House. Despite his untimely death, Lincoln's legacy as the \"Great Emancipator\" and one of America's greatest presidents endures, inspiring generations with his vision of a more perfect union and his unwavering dedication to freedom and equality for all.",
+  },
+];
+
+// 1901 - 2000 Historical Figures
+const peopleInCentury20 = [
+  {
+    name: "Nikola Tesla",
+    description:
+      "Nikola Tesla, born in 1856 in Smiljan, Croatia (then part of the Austrian Empire), was a Serbian-American inventor, electrical engineer, and futurist who made groundbreaking contributions to the development of electrical power systems. Tesla is best known for his work on alternating current (AC) electricity, which revolutionized the generation, transmission, and distribution of electrical energy. His inventions and discoveries include the induction motor, the Tesla coil, and the alternating current polyphase system, which laid the foundation for the modern electrical grid. Despite facing numerous challenges and setbacks throughout his career, including financial difficulties and conflicts with rival inventors such as Thomas Edison, Tesla's visionary ideas and inventive genius left an indelible mark on the world. He held over 300 patents and made significant contributions to various fields, including radio communication, robotics, and wireless technology. Tesla's futuristic vision of wireless power transmission and global communication systems foreshadowed many technologies that would later become reality. Despite his relative obscurity during his lifetime, Tesla's legacy as a pioneering inventor and technological visionary has grown in stature over the years, and he is now widely recognized as one of the greatest inventors of the modern era.",
+  },
+  {
+    name: "Mahatma Gandhi",
+    description:
+      "Mahatma Gandhi, born in 1869 in Porbandar, India, was a key figure in India's struggle for independence from British colonial rule. He is widely regarded as the father of the Indian independence movement and one of the most influential political and spiritual leaders of the 20th century. Gandhi's philosophy of nonviolent resistance, known as Satyagraha, emphasized the power of truth, love, and passive resistance as tools for social and political change. Through acts of civil disobedience, such as boycotts, strikes, and peaceful protests, Gandhi mobilized millions of Indians in the fight against British imperialism. His leadership and moral authority inspired people around the world and helped to shape the course of history. Despite facing imprisonment and persecution, Gandhi remained steadfast in his commitment to nonviolence and his vision of a united, independent India. Gandhi's legacy extends far beyond India's struggle for independence. His principles of nonviolence, tolerance, and equality continue to inspire movements for social justice and human rights around the globe. Gandhi's teachings on nonviolence and his emphasis on the dignity and worth of every individual remain as relevant today as they were during his lifetime, making him a symbol of hope and inspiration for people everywhere.",
+  },
+  {
+    name: "Henry Ford",
+    description:
+      "Henry Ford, born in 1863 in Greenfield Township, Michigan, was an American industrialist and the founder of the Ford Motor Company. He is best known for revolutionizing the automobile industry by introducing assembly line production techniques, which dramatically reduced the cost of manufacturing and made automobiles affordable to the average American consumer. Ford's Model T, introduced in 1908, became one of the most popular and influential cars in history, transforming the way people lived, worked, and traveled. Ford's innovations in mass production and management techniques not only revolutionized the automotive industry but also had a profound impact on manufacturing processes across various industries. In addition to his contributions to industry, Ford was also a pioneer in the field of labor relations, implementing the \"Five Dollar Day\" in 1914, which doubled the wages of Ford workers and helped to establish the concept of the living wage. Ford's legacy as a visionary entrepreneur, innovator, and philanthropist continues to be celebrated, and his impact on American industry and society is still felt today.",
+  },
+];
+
+// 2000 - 2100 Historical Figures
+const peopleInCentury21 = [
+  {
+    name: "Angela Merkel",
+    description:
+      "Angela Merkel, born in 1954 in Hamburg, West Germany, is a German politician who served as the Chancellor of Germany from 2005 to 2021. She is one of the most influential and longest-serving leaders in modern European history. Merkel, a member of the Christian Democratic Union (CDU), became the first female chancellor of Germany in 2005 and went on to win reelection in 2009, 2013, and 2017. Throughout her tenure, Merkel was widely regarded as a pragmatic and steady-handed leader, guiding Germany through a series of domestic and international challenges, including the global financial crisis, the European debt crisis, and the refugee crisis. Merkel's leadership style, characterized by her analytical approach, consensus-building skills, and commitment to stability and continuity, earned her widespread respect both at home and abroad. She played a key role in shaping European Union policies and was often referred to as the de facto leader of Europe. Merkel's decision to step down as chancellor in 2021 marked the end of an era in German and European politics, leaving behind a legacy of leadership, stability, and diplomatic skill that will endure for years to come.",
+  },
+  {
+    name: "Barack Obama",
+    description:
+      'Barack Obama, the 44th President of the United States, served from 2009 to 2017 as the first African American to hold the office. His presidency was defined by a message of hope, inclusivity, and change, symbolized by his campaign slogan "Yes We Can." Obama implemented landmark policies such as the Affordable Care Act, aimed at expanding healthcare access, and enacted financial reforms following the 2008 financial crisis. His administration also prioritized diplomacy, multilateralism, and efforts to address social issues like immigration reform and LGBTQ+ rights. Obama\'s leadership style, characterized by eloquence and pragmatism, left a lasting impact on American politics and society, inspiring many with his vision of a more united and equitable nation.',
+  },
+  {
+    name: "Tenzin Gyatso",
+    description:
+      "Tenzin Gyatso, born in 1935 in Amdo, Tibet, is the 14th Dalai Lama and the spiritual leader of Tibetan Buddhism. Recognized at the age of two as the reincarnation of his predecessor, he was enthroned as the Dalai Lama at the age of five. Throughout his life, the Dalai Lama has been a leading advocate for nonviolence, human rights, and interfaith dialogue. He has worked tirelessly to promote the welfare of the Tibetan people and to preserve Tibetan culture and identity in the face of Chinese occupation. Awarded the Nobel Peace Prize in 1989, the Dalai Lama continues to inspire millions around the world with his message of compassion, tolerance, and peace.",
   },
 ];
 
@@ -243,13 +417,13 @@ export default {
   peopleInCentury10,
   peopleInCentury11,
   peopleInCentury12,
-  //   peopleInCentury13,
-  //   peopleInCentury14,
-  //   peopleInCentury15,
-  //   peopleInCentury16,
-  //   peopleInCentury17,
-  //   peopleInCentury18,
-  //   peopleInCentury19,
-  //   peopleInCentury20,
-  //   peopleInCentury21,
+  peopleInCentury13,
+  peopleInCentury14,
+  peopleInCentury15,
+  peopleInCentury16,
+  peopleInCentury17,
+  peopleInCentury18,
+  peopleInCentury19,
+  peopleInCentury20,
+  peopleInCentury21,
 };
