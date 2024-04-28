@@ -29,7 +29,12 @@ body {
 }
 
 .figure-photo {
-  /* max-width: 1000px; */
-  max-height: 300px;
-  border-radius: 25px;
+  max-width: 500px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.hidden {
+  display: none;
 }

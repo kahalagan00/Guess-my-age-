@@ -6,6 +6,16 @@ import figures from "./figures.js";
   Last updated: April 26, 2024
 */
 
+const showInformation = (win) => {
+  if (win) {
+    figureName.classList.remove("hidden");
+    figureDescription.classList.remove("hidden");
+  } else {
+    figureName.classList.add("hidden");
+    figureDescription.classList.add("hidden");
+  }
+};
+
 const displayMainImage = () => {
   const personIndex = Math.trunc(Math.random() * 3);
   let century;
@@ -13,7 +23,7 @@ const displayMainImage = () => {
 
   // JOSHMAR DEBUG AND CHANGE
   // The century needs to match with the calculated age
-  century = Math.trunc(Math.random() * 21) + 1;
+  century = Math.floor((birthYear - 1) / 100) + 1;
 
   switch (century) {
     case 1:
@@ -106,6 +116,10 @@ const displayMainImage = () => {
   }
 
   mainImage.src = `./century${century}/${centuryGroup[personIndex].name}/pfp.jpg`;
+
+  figureName.textContent = centuryGroup[personIndex].name;
+
+  figureDescription.textContent = centuryGroup[personIndex].description;
 };
 
 const displayHighScore = () => {
@@ -144,6 +158,8 @@ const displayInputBox = (color) => {
 const date = new Date();
 const currentYear = date.getFullYear();
 const mainImage = document.querySelector(".figure-photo");
+const figureName = document.querySelector(".figure-name");
+const figureDescription = document.querySelector(".figure-description");
 let highScore = 0;
 let win = false;
 let tries = 10;
@@ -159,6 +175,7 @@ document.querySelector(".check").addEventListener("click", function () {
     } else if (guess === currentAge) {
       displayStatus("EXCELLENT!!! You got it right 🥳");
       displayInputBox("#2dff54");
+      showInformation(true);
       win = true;
     } else if (guess < currentAge) {
       displayStatus("I am older than that! ⬆️");
@@ -198,7 +215,8 @@ document.querySelector(".reset").addEventListener("click", function () {
   displayBirthYear();
   displayMainImage();
   displayInputBox("white");
-  console.log(`answer: ${currentAge}`);
+  showInformation(false);
+  console.log(`answer: ${currentAge}`); // Uncomment to debug and see answers in console :)
 });
 
 displayMainImage();
@@ -206,4 +224,4 @@ displayCurrentYear();
 displayBirthYear();
 displayAttempts(`Attempts: ${tries}`);
 displayHighScore();
-// console.log(`answer: ${currentAge}`);  // Uncomment to debug and see answers in console :)
+console.log(`answer: ${currentAge}`); // Uncomment to debug and see answers in console :)
