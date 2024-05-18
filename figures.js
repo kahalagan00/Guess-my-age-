@@ -1,5 +1,5 @@
 /*
-    Last updated data: April 22, 2024
+    Last updated: May 17, 2024
 */
 
 // 0 - 100 Historical Figures
@@ -404,7 +404,7 @@ const peopleInCentury21 = [
   },
 ];
 
-export default {
+export default [
   peopleInCentury1,
   peopleInCentury2,
   peopleInCentury3,
@@ -426,4 +426,4 @@ export default {
   peopleInCentury19,
   peopleInCentury20,
   peopleInCentury21,
-};
+];
