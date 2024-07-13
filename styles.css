@@ -1,6 +1,6 @@
 /*
   Author: Joshmar Morales
-  Last updated: April 26, 2024
+  Last updated: July 13, 2024
 */
 
 body {
@@ -17,6 +17,34 @@ body {
   border-color: rgba(0, 0, 0, 0.15);
   background-color: white;
   font-size: 16px;
+  width: 100px;
+}
+
+.scoreHolder {
+  display: flex;
+  background-color: rgb(201, 201, 201);
+  border: 1px solid gray;
+  border-radius: 16px;
+  padding: 10px;
+  margin: 10px;
+  width: 180px;
+}
+
+.commentaryContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.commentary {
+  background-color: rgb(201, 201, 201);
+  padding: 20px;
+  margin: 10px;
+  border: 1px solid gray;
+  border-radius: 16px;
+  width: 500px;
 }
 
 .message {
@@ -29,12 +57,18 @@ body {
 }
 
 .figure-photo {
-  max-width: 500px;
-  height: auto;
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+  object-position: top;
   display: block;
   margin: 0 auto;
 }
 
 .hidden {
   display: none;
+}
+
+.btn {
+  width: 100px;
 }

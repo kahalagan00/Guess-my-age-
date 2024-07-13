@@ -1,5 +1,5 @@
 /*
-    Last updated: May 17, 2024
+    Last updated: July 13, 2024
 */
 
 // 0 - 100 Historical Figures

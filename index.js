@@ -3,7 +3,7 @@ import figures from "./figures.js";
 
 /*
   Author: Joshmar Morales
-  Last updated: May 17, 2024
+  Last updated: July 13, 2024
 */
 
 const startGame = function () {
@@ -40,7 +40,7 @@ const showInformation = (win) => {
   }
 };
 
-const displayMainImage = () => {
+const displayMainImage = function () {
   const personIndex = Math.trunc(Math.random() * 3);
   let century;
   let centuryGroup;
@@ -57,19 +57,19 @@ const displayMainImage = () => {
   figureDescription.textContent = centuryGroup[personIndex].description;
 };
 
-const displayHighScore = () => {
+const displayHighScore = function () {
   document.querySelector(".highscore").textContent = `${highScore}`;
 };
 
-const displayCurrentYear = () => {
+const displayCurrentYear = function () {
   document.querySelector(".current-year").textContent = `${currentYear}`;
 };
 
-const displayBirthYear = () => {
+const displayBirthYear = function () {
   document.querySelector(".born-year").textContent = birthYear;
 };
 
-const generateRandomBirthYear = () => {
+const generateRandomBirthYear = function () {
   return Math.trunc(Math.random() * currentYear) + 1;
 };
 
