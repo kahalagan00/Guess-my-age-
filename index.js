@@ -1,10 +1,9 @@
 "use strict";
 import figures from "./figures.js";
 
-/*
-  Author: Joshmar Morales
-  Last updated: July 13, 2024
-*/
+/**
+ * Author: Joshmar Morales
+ */
 
 const startGame = function () {
   displayMainImage();
@@ -12,6 +11,7 @@ const startGame = function () {
   displayBirthYear();
   displayAttempts(`Attempts: ${tries}`);
   displayHighScore();
+  // console.log(realAnswer); // Uncomment to debug and see answers in console :)
 };
 
 const resetGame = function () {
@@ -21,16 +21,17 @@ const resetGame = function () {
   currentAge = currentYear - birthYear;
   document.querySelector(".guess").value = "";
   displayStatus("");
+  displayStatusInput(defaultPlaceholder, NEUTRAL_COLOR);
   displayAttempts(`Attempts: ${tries}`);
   displayEnding("");
   displayCurrentYear();
   displayBirthYear();
   displayMainImage();
-  statusColor("white", "white");
   showInformation(false);
+  // console.log(realAnswer); // Uncomment to debug and see answers in console :)
 };
 
-const showInformation = (win) => {
+const showInformation = function (win) {
   if (win) {
     figureName.classList.remove("hidden");
     figureDescription.classList.remove("hidden");
@@ -73,60 +74,50 @@ const generateRandomBirthYear = function () {
   return Math.trunc(Math.random() * currentYear) + 1;
 };
 
-const displayStatus = (message) => {
+const displayStatus = function (message) {
   document.querySelector(".message").textContent = message;
 };
 
-const displayAttempts = (message) => {
+const displayStatusInput = function (message, color = "white") {
+  guessBox.placeholder = message;
+  guessBox.style.backgroundColor = color;
+};
+
+const displayAttempts = function (message) {
   document.querySelector(".attempts").textContent = message;
   document.querySelector(".attempts").style.color = tries > 0 ? "green" : "red";
 };
 
-const displayEnding = (message) => {
+const displayEnding = function (message) {
   document.querySelector(".ending").textContent = message;
 };
 
-const statusColor = (buttonColor, backgroundColor) => {
-  document.querySelector(".guess").style.backgroundColor = buttonColor;
-  document.body.style.backgroundColor = backgroundColor;
-};
-
-// End of functions
-
-const date = new Date();
-const currentYear = date.getFullYear();
-const mainImage = document.querySelector(".figure-photo");
-const figureName = document.querySelector(".figure-name");
-const figureDescription = document.querySelector(".figure-description");
-let highScore = 0;
-let win = false;
-let tries = 10;
-let birthYear = generateRandomBirthYear();
-let currentAge = currentYear - birthYear;
-
-document.querySelector(".check").addEventListener("click", function () {
-  const guess = Number(document.querySelector(".guess").value);
+const checkAnswer = function () {
+  const guess = Number(guessBox.value);
 
   if (tries > 0 && !win) {
     if (guess <= 0) {
-      displayStatus("Enter a non-zero positive number please.");
+      displayStatus("Enter a positive number please.");
+      displayStatusInput("Enter a positive number please.", NEGATIVE_COLOR);
     } else if (guess === currentAge) {
       displayStatus("EXCELLENT!!! You got it right 🥳");
-      statusColor("#2dff54", "#87eba4");
+      displayStatusInput("Right answer", POSITIVE_COLOR);
       showInformation(true);
       win = true;
     } else if (guess < currentAge) {
       displayStatus("I am older than that! ⬆️");
+      displayStatusInput("Wrong answer", NEGATIVE_COLOR);
       tries--;
     } else if (guess > currentAge) {
       displayStatus("I am younger than that! ⬇️");
+      displayStatusInput("Wrong answer", NEGATIVE_COLOR);
       tries--;
     }
   }
 
   if (tries === 0) {
     displayStatus("You ran out of attempts...");
-    statusColor("red", "#eb879c");
+    displayStatusInput("No more attempts", false);
   }
 
   if (tries === 0 || win) {
@@ -138,12 +129,38 @@ document.querySelector(".check").addEventListener("click", function () {
   }
 
   displayAttempts(`Attempts: ${tries}`);
+};
+
+// End of functions
+
+const NEGATIVE_COLOR = "#eb879c";
+const POSITIVE_COLOR = "#87eba4";
+const NEUTRAL_COLOR = "white";
+
+const date = new Date();
+const currentYear = date.getFullYear();
+const mainImage = document.querySelector(".figure-photo");
+const figureName = document.querySelector(".figure-name");
+const figureDescription = document.querySelector(".figure-description");
+const submitBtn = document.querySelector(".check");
+const resetBtn = document.querySelector(".reset");
+const guessBox = document.querySelector(".guess");
+const defaultPlaceholder = guessBox.dataset.placeholder;
+let highScore = 0;
+let win = false;
+let tries = 10;
+let birthYear = generateRandomBirthYear();
+let currentAge = currentYear - birthYear;
+let realAnswer = `answer: ${currentAge}`;
+
+submitBtn.addEventListener("click", checkAnswer);
+
+guessBox.addEventListener("keydown", function (e) {
+  if (e.key === "Enter") {
+    checkAnswer();
+  }
 });
 
-document.querySelector(".reset").addEventListener("click", function () {
-  resetGame();
-  // console.log(`answer: ${currentAge}`); // Uncomment to debug and see answers in console :)
-});
+resetBtn.addEventListener("click", resetGame);
 
 startGame();
-// console.log(`answer: ${currentAge}`); // Uncomment to debug and see answers in console :)

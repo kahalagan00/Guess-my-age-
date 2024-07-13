@@ -1,7 +1,11 @@
-/*
-  Author: Joshmar Morales
-  Last updated: July 13, 2024
-*/
+/**
+ * Author: Joshmar Morales
+ */
+
+* {
+  margin: 0;
+  border: 0;
+}
 
 body {
   background-color: white;
@@ -17,7 +21,7 @@ body {
   border-color: rgba(0, 0, 0, 0.15);
   background-color: white;
   font-size: 16px;
-  width: 100px;
+  width: 300px;
 }
 
 .scoreHolder {

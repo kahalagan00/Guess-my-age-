@@ -1,6 +1,6 @@
-/*
-    Last updated: July 13, 2024
-*/
+/**
+ * Author: Joshmar Morales
+ */
 
 // 0 - 100 Historical Figures
 const peopleInCentury1 = [
