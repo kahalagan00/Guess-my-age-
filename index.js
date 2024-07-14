@@ -11,7 +11,7 @@ const startGame = function () {
   displayBirthYear();
   displayAttempts(`Attempts: ${tries}`);
   displayHighScore();
-  console.log(realAnswer); // Uncomment to debug and see answers in console :)
+  console.log(realAnswer); // To debug and see answers in console :)
 };
 
 const resetGame = function () {
@@ -29,7 +29,7 @@ const resetGame = function () {
   mainImageContainer.style.transform = `translateX(50%)`;
   figureContainer.style.transform = `translateX(-50%)`;
   showInformation(false);
-  console.log(currentAge); // Uncomment to debug and see answers in console :)
+  console.log(currentAge); // To debug and see answers in console :)
 };
 
 const showInformation = function (win) {
@@ -83,8 +83,8 @@ const displayStatusInput = function (message, color = "white") {
 };
 
 const displayAttempts = function (message) {
-  document.querySelector(".attempts").textContent = message;
-  document.querySelector(".attempts").style.color = tries > 0 ? "green" : "red";
+  attemptEl.textContent = message;
+  attemptEl.style.color = tries > 0 ? "green" : "red";
 };
 
 const changeTitle = function (message, color) {
@@ -156,6 +156,8 @@ const submitBtn = document.querySelector(".check");
 const resetBtn = document.querySelector(".reset");
 const guessBox = document.querySelector(".guess");
 const defaultPlaceholder = guessBox.dataset.placeholder;
+const attemptEl = document.querySelector(".attempts");
+
 let highScore = 0;
 let win = false;
 let tries = 10;
