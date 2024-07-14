@@ -8,30 +8,34 @@
 }
 
 body {
-  background-color: white;
+  background-color: #fff8f3;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+.rules {
+  background-color: #ffff6e;
+  padding: 0;
+  margin: 0;
+  bottom: 0;
 }
 
 .guess {
   padding: 0;
-  height: 30px;
-  position: relative;
-  left: 0;
+  margin-top: 5px;
+  border: 0;
+  border-radius: 25px;
+  height: 10px;
   outline: none;
-  border: 1px solid #cdcdcd;
-  border-color: rgba(0, 0, 0, 0.15);
   background-color: white;
   font-size: 16px;
-  width: 300px;
-}
-
-.scoreHolder {
-  display: flex;
-  background-color: rgb(201, 201, 201);
-  border: 1px solid gray;
-  border-radius: 16px;
-  padding: 10px;
-  margin: 10px;
-  width: 180px;
+  width: 100px;
 }
 
 .commentaryContainer {
@@ -43,12 +47,12 @@ body {
 }
 
 .commentary {
-  background-color: rgb(201, 201, 201);
+  background-color: #f7e7dc;
   padding: 20px;
   margin: 10px;
-  border: 1px solid gray;
+  /* border: 2px solid #758694; */
   border-radius: 16px;
-  width: 500px;
+  width: 400px;
 }
 
 .message {
@@ -61,8 +65,8 @@ body {
 }
 
 .figure-photo {
-  width: 500px;
-  height: 500px;
+  width: 400px;
+  height: 400px;
   object-fit: cover;
   object-position: top;
   display: block;
@@ -74,5 +78,35 @@ body {
 }
 
 .btn {
-  width: 100px;
+  width: 120px;
+  border-radius: 25px;
+}
+
+.answer-divide {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  transition: all ease-in-out 1s;
+}
+
+.img-divide {
+  /* width: 50%; */
+  flex: 1;
+  z-index: 2;
+  /* border: 1px solid black; */
+  margin: 0;
+  padding: 20px;
+  transform: translateX(50%);
+  transition: all ease-in-out 1s;
+}
+
+.figure-divide {
+  /* width: 50%; */
+  flex: 1;
+  z-index: 1;
+  /* border: 1px solid black; */
+  margin: 0;
+  padding: 20px;
+  transform: translateX(-50%);
+  transition: all ease-in-out 1s;
 }

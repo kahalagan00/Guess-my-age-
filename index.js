@@ -11,24 +11,25 @@ const startGame = function () {
   displayBirthYear();
   displayAttempts(`Attempts: ${tries}`);
   displayHighScore();
-  // console.log(realAnswer); // Uncomment to debug and see answers in console :)
+  console.log(realAnswer); // Uncomment to debug and see answers in console :)
 };
 
 const resetGame = function () {
+  changeTitle("What is my age?", BASE_TEXT_COLOR);
   tries = 10;
   win = false;
   birthYear = generateRandomBirthYear();
   currentAge = currentYear - birthYear;
   document.querySelector(".guess").value = "";
-  displayStatus("");
-  displayStatusInput(defaultPlaceholder, NEUTRAL_COLOR);
+  displayStatusInput(defaultPlaceholder, BASE_COLOR);
   displayAttempts(`Attempts: ${tries}`);
-  displayEnding("");
   displayCurrentYear();
   displayBirthYear();
   displayMainImage();
+  mainImageContainer.style.transform = `translateX(50%)`;
+  figureContainer.style.transform = `translateX(-50%)`;
   showInformation(false);
-  // console.log(realAnswer); // Uncomment to debug and see answers in console :)
+  console.log(currentAge); // Uncomment to debug and see answers in console :)
 };
 
 const showInformation = function (win) {
@@ -51,8 +52,9 @@ const displayMainImage = function () {
 
   centuryGroup = figureGroup[century - 1];
 
-  mainImage.src = `./century${century}/${centuryGroup[personIndex].name}/pfp.jpg`;
+  mainImage.src = `./assets/figures/century${century}/${centuryGroup[personIndex].name}/pfp.jpg`;
 
+  // console.log(`Src = ${mainImage.src}`);
   figureName.textContent = centuryGroup[personIndex].name;
 
   figureDescription.textContent = centuryGroup[personIndex].description;
@@ -74,11 +76,8 @@ const generateRandomBirthYear = function () {
   return Math.trunc(Math.random() * currentYear) + 1;
 };
 
-const displayStatus = function (message) {
-  document.querySelector(".message").textContent = message;
-};
-
 const displayStatusInput = function (message, color = "white") {
+  guessBox.value = "";
   guessBox.placeholder = message;
   guessBox.style.backgroundColor = color;
 };
@@ -88,8 +87,9 @@ const displayAttempts = function (message) {
   document.querySelector(".attempts").style.color = tries > 0 ? "green" : "red";
 };
 
-const displayEnding = function (message) {
-  document.querySelector(".ending").textContent = message;
+const changeTitle = function (message, color) {
+  title.textContent = message;
+  title.style.color = color;
 };
 
 const checkAnswer = function () {
@@ -97,27 +97,32 @@ const checkAnswer = function () {
 
   if (tries > 0 && !win) {
     if (guess <= 0) {
-      displayStatus("Enter a positive number please.");
-      displayStatusInput("Enter a positive number please.", NEGATIVE_COLOR);
+      displayStatusInput("Positive", NEUTRAL_COLOR);
     } else if (guess === currentAge) {
-      displayStatus("EXCELLENT!!! You got it right 🥳");
-      displayStatusInput("Right answer", POSITIVE_COLOR);
-      showInformation(true);
+      changeTitle("EXCELLENT!!! You got it right 🥳", WINNING_COLOR);
+      displayStatusInput("Correct!", POSITIVE_COLOR);
+
+      // Show figure name and description
+      mainImageContainer.style.transform = `translateX(0)`;
+      figureContainer.style.transform = `translateX(0)`;
+      setTimeout(() => {
+        showInformation(true);
+      }, 250);
+
+      // Game winning variable
       win = true;
     } else if (guess < currentAge) {
-      displayStatus("I am older than that! ⬆️");
-      displayStatusInput("Wrong answer", NEGATIVE_COLOR);
+      displayStatusInput("Older", NEGATIVE_COLOR);
       tries--;
     } else if (guess > currentAge) {
-      displayStatus("I am younger than that! ⬇️");
-      displayStatusInput("Wrong answer", NEGATIVE_COLOR);
+      displayStatusInput("Younger", NEGATIVE_COLOR);
       tries--;
     }
   }
 
   if (tries === 0) {
-    displayStatus("You ran out of attempts...");
-    displayStatusInput("No more attempts", false);
+    displayStatusInput("Lose", false);
+    changeTitle("Game Over 🥲", LOSING_COLOR);
   }
 
   if (tries === 0 || win) {
@@ -125,21 +130,26 @@ const checkAnswer = function () {
       highScore = tries;
     }
     displayHighScore();
-    displayEnding("Please press the reset button to restart the game");
   }
 
   displayAttempts(`Attempts: ${tries}`);
 };
 
-// End of functions
-
+// Globals
+const WINNING_COLOR = "green";
+const LOSING_COLOR = "red";
 const NEGATIVE_COLOR = "#eb879c";
 const POSITIVE_COLOR = "#87eba4";
-const NEUTRAL_COLOR = "white";
+const NEUTRAL_COLOR = "#FFFF6E";
+const BASE_COLOR = "white";
+const BASE_TEXT_COLOR = "black";
 
 const date = new Date();
 const currentYear = date.getFullYear();
+const title = document.querySelector(".main-title");
+const mainImageContainer = document.querySelector(".img-divide");
 const mainImage = document.querySelector(".figure-photo");
+const figureContainer = document.querySelector(".figure-divide");
 const figureName = document.querySelector(".figure-name");
 const figureDescription = document.querySelector(".figure-description");
 const submitBtn = document.querySelector(".check");
@@ -153,6 +163,7 @@ let birthYear = generateRandomBirthYear();
 let currentAge = currentYear - birthYear;
 let realAnswer = `answer: ${currentAge}`;
 
+// Event listeners
 submitBtn.addEventListener("click", checkAnswer);
 
 guessBox.addEventListener("keydown", function (e) {
