@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- JhuvangDev created game.  -->
-    <!-- Version 1.0 -->
-    <!-- Last updated April 23, 2024 -->
+    <!-- Author: Joshmar Morales  -->
+    <!-- Version 2.0 -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Age</title>
+    <title>My Age</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -14,63 +13,67 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./styles.css" />
+    <script defer type="module" src="./index.js"></script>
   </head>
   <body>
-    <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
-      <div class="container-fluid">
-        <span class="navbar-brand mb-0 h1">JhuvangDev</span>
+    <section class="section header">
+      <div class="scoreHolder">
+        <h5>High score: <strong class="highscore"></strong></h5>
       </div>
-    </nav>
-    <section id="statistics">
-      <div class="row">
-        <div class="col-lg-12 text-begin">
-          <h5 class="px-3 py-1">
-            <strong>High score: <span class="highscore"></span></strong>
-          </h5>
-        </div>
+      <div class="rules">
+        <h5><u>Enter positive numbers only</u></h5>
+        <h5><u>Press (Reset) to restart</u></h5>
       </div>
     </section>
-    <section id="mainHeader">
+
+    <section class="section" id="mainHeader">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h1 class="display-4 py-2">What is my age?</h1>
+            <h1 class="display-4 main-title">What is my age?</h1>
           </div>
         </div>
         <div class="row justify-content-center">
           <div class="col-lg-12 text-center">
-            <div class="card mx-auto" style="width: 500px">
-              <img
-                src="#"
-                class="card-img-top figure-photo img-fluid"
-                alt="Historical Figure Photo"
-              />
-              <div class="card-body">
-                <h5 class="card-title hidden figure-name">Card title</h5>
-                <p class="card-text hidden figure-description"></p>
+            <div class="answer-divide">
+              <div class="img-divide">
+                <img
+                  src="#"
+                  class="card-img-top figure-photo img-fluid"
+                  alt="Historical Figure Photo"
+                  loading="lazy"
+                />
+              </div>
+              <div class="figure-divide">
+                <h5 class="card-title figure-name hidden">Card title</h5>
+                <p class="card-text figure-description hidden"></p>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section id="mainGame" class="px-5 py-3">
+
+    <section class="section" id="mainGame" class="px-5 py-3">
       <div class="container">
         <div class="row">
-          <div class="col-lg-12 text-center">
-            <h5>
-              I was born in <span class="born-year"></span>. It is currently the
-              year <span class="current-year">XXXX</span>.
-            </h5>
-            <h5>
-              Therefore, I should now be
-              <input
-                type="text"
-                placeholder="Age"
-                class="guess form-control-lg text-center"
-              />
-              years old.
-            </h5>
+          <div class="col-lg-12 text-center commentaryContainer">
+            <div class="commentary">
+              <h5>
+                I was born in <span class="born-year"></span>. It is currently
+                the year <span class="current-year">XXXX</span>.
+              </h5>
+              <h5>
+                Therefore, I should now be
+                <input
+                  type="text"
+                  data-placeholder="Age"
+                  placeholder="Age"
+                  class="guess form-control-lg text-center"
+                />
+                years old.
+              </h5>
+            </div>
           </div>
         </div>
         <div class="row">
@@ -79,27 +82,18 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-12 py-2 text-center">
+          <div class="col-lg-12 py-1 text-center">
             <button type="button" class="btn btn-md btn-primary check">
               Submit
             </button>
           </div>
-          <div class="col-lg-12 py-2 text-center">
+          <div class="col-lg-12 py-1 text-center">
             <button type="button" class="btn btn-md btn-secondary reset">
               Reset
             </button>
           </div>
         </div>
-
-        <div class="row">
-          <div class="col-lg-12 py-2 text-center">
-            <h3 class="message"></h3>
-            <h3 class="ending"></h3>
-          </div>
-        </div>
       </div>
     </section>
-
-    <script type="module" src="./index.js"></script>
   </body>
 </html>

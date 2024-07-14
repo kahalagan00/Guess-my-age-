@@ -1,22 +1,59 @@
-/*
-  Author: Joshmar Morales
-  Last updated: April 26, 2024
+/* 
+Author: Joshmar Morales
+Main theme color palette: https://colorhunt.co/palette/405d72758694f7e7dcfff8f3 
 */
 
+* {
+  margin: 0;
+  border: 0;
+}
+
 body {
-  background-color: white;
+  background-color: #fff8f3;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+.rules {
+  background-color: #ffff6e;
+  padding: 0;
+  margin: 0;
+  bottom: 0;
 }
 
 .guess {
   padding: 0;
-  height: 30px;
-  position: relative;
-  left: 0;
+  margin-top: 5px;
+  border: 0;
+  border-radius: 25px;
+  height: 10px;
   outline: none;
-  border: 1px solid #cdcdcd;
-  border-color: rgba(0, 0, 0, 0.15);
   background-color: white;
   font-size: 16px;
+  width: 100px;
+}
+
+.commentaryContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.commentary {
+  background-color: #f7e7dc;
+  padding: 20px;
+  margin: 10px;
+  /* border: 2px solid #758694; */
+  border-radius: 16px;
+  width: 400px;
 }
 
 .message {
@@ -29,12 +66,48 @@ body {
 }
 
 .figure-photo {
-  max-width: 500px;
-  height: auto;
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  object-position: top;
   display: block;
   margin: 0 auto;
 }
 
 .hidden {
   display: none;
+}
+
+.btn {
+  width: 120px;
+  border-radius: 25px;
+}
+
+.answer-divide {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  transition: all ease-in-out 1s;
+}
+
+.img-divide {
+  /* width: 50%; */
+  flex: 1;
+  z-index: 2;
+  /* border: 1px solid black; */
+  margin: 0;
+  padding: 20px;
+  transform: translateX(50%);
+  transition: all ease-in-out 1s;
+}
+
+.figure-divide {
+  /* width: 50%; */
+  flex: 1;
+  z-index: 1;
+  /* border: 1px solid black; */
+  margin: 0;
+  padding: 20px;
+  transform: translateX(-50%);
+  transition: all ease-in-out 1s;
 }
