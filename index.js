@@ -5,6 +5,8 @@ import figures from "./figures.js";
  * Author: Joshmar Morales
  */
 
+const MAX_MOBILE_WIDTH = 768; // In pixels
+
 const startGame = function () {
   displayMainImage();
   displayCurrentYear();
@@ -92,6 +94,8 @@ const changeTitle = function (message, color) {
   title.style.color = color;
 };
 
+let clientWidth = document.documentElement.clientWidth;
+
 const checkAnswer = function () {
   const guess = Number(guessBox.value);
 
@@ -103,14 +107,21 @@ const checkAnswer = function () {
       displayStatusInput("Correct!", POSITIVE_COLOR);
 
       // Show figure name and description
-      mainImageContainer.style.transform = `translateX(0)`;
-      figureContainer.style.transform = `translateX(0)`;
+      if (clientWidth > MAX_MOBILE_WIDTH) {
+        mainImageContainer.style.transform = `translateX(0)`;
+        figureContainer.style.transform = `translateX(0)`;
+      } else {
+        mainImageContainer.style.transform = `translateY(0)`;
+        figureContainer.style.transform = `translateY(0)`;
+      }
+
       setTimeout(() => {
         showInformation(true);
       }, 250);
 
       // Game winning variable
       win = true;
+      console.log(`Client width = ${clientWidth}`);
     } else if (guess < currentAge) {
       displayStatusInput("Older", NEGATIVE_COLOR);
       tries--;
