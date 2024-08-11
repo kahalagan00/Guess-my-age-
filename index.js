@@ -28,10 +28,14 @@ const resetGame = function () {
   displayCurrentYear();
   displayBirthYear();
   displayMainImage();
-  mainImageContainer.style.transform = `translateX(50%)`;
-  figureContainer.style.transform = `translateX(-50%)`;
+
+  clientWidth = document.documentElement.clientWidth;
+  mainImageContainer.style.transform =
+    clientWidth <= 1000 ? `translateX(0)` : `translateX(50%)`;
+  figureContainer.style.transform =
+    clientWidth <= 1000 ? `translateX(0)` : `translateX(-50%)`;
   showInformation(false);
-  console.log(currentAge); // To debug and see answers in console :)
+  console.log(`currentAge = ${currentAge}`); // To debug and see answers in console :)
 };
 
 const showInformation = function (win) {
@@ -158,9 +162,9 @@ const BASE_TEXT_COLOR = "black";
 const date = new Date();
 const currentYear = date.getFullYear();
 const title = document.querySelector(".main-title");
-const mainImageContainer = document.querySelector(".img-divide");
+const mainImageContainer = document.querySelector(".answer-divide__img-divide");
 const mainImage = document.querySelector(".figure-photo");
-const figureContainer = document.querySelector(".figure-divide");
+const figureContainer = document.querySelector(".answer-divide__figure-divide");
 const figureName = document.querySelector(".figure-name");
 const figureDescription = document.querySelector(".figure-description");
 const submitBtn = document.querySelector(".check");
@@ -188,3 +192,11 @@ guessBox.addEventListener("keydown", function (e) {
 resetBtn.addEventListener("click", resetGame);
 
 startGame();
+
+window.addEventListener("resize", function () {
+  // console.log(window.innerWidth);
+  mainImageContainer.style.transform =
+    window.innerWidth <= 1000 ? `translateX(0)` : `translateX(50%)`;
+  figureContainer.style.transform =
+    window.innerWidth <= 1000 ? `translateX(0)` : `translateX(-50%)`;
+});
