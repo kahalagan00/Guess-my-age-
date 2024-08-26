@@ -150,7 +150,7 @@ const checkAnswer = function () {
   displayAttempts(`Attempts: ${tries}`);
 };
 
-// Globals
+// GLOBALS
 const WINNING_COLOR = "green";
 const LOSING_COLOR = "red";
 const NEGATIVE_COLOR = "#eb879c";
@@ -180,7 +180,7 @@ let birthYear = generateRandomBirthYear();
 let currentAge = currentYear - birthYear;
 let realAnswer = `answer: ${currentAge}`;
 
-// Event listeners
+// EVENT LISTENERS
 submitBtn.addEventListener("click", checkAnswer);
 
 guessBox.addEventListener("keydown", function (e) {
